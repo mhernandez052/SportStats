@@ -3,7 +3,6 @@ CXX = g++
 CXXFLAGS += -w
 
 OBJ = main.o Game.o Player.o Scoreboard.o Score_Summary.o
-SRC = main.cpp Game.cpp Player.cpp Scoreboard.cpp Score_Summary.cpp
 PROG = SportStats
 
 all: ${PROG}
@@ -29,5 +28,3 @@ Scoreboard.o:
 
 Score_Summary.o:
 	@${CXX} ${CPPFLAGS} ${CXXFLAGS} -c Score_Summary.cpp
-
-

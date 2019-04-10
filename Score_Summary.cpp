@@ -19,8 +19,10 @@ void Score_Summary::display(){
   
   for(int event = 0; event < all_goals.size(); event++){
     goal_t current = all_goals[event];
-    if( current.period != period )
-      std::cout<<"Period "<<current.period<<":\n";
+    if( current.period != period ){
+      period = current.period;
+      std::cout<<"Period "<<period+1<<":\n";
+    }
     std::cout<<current.scorer.get_name()<<", Team "<<current.team<<" scored!\n";
   }
 }

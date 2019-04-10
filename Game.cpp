@@ -26,7 +26,7 @@ std::vector <Player> Game::get_roster_from_file(std::string file){
 Game::Game(std::string team1, std::string team2){
   roster[0] = get_roster_from_file(team1);
   roster[1] = get_roster_from_file(team2);
-
+  current_period = 0;
   if( roster[0].empty() || roster[1].empty()  )
     throw "Team files NOT successfully loaded.\n";
 }

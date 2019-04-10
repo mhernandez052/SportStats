@@ -9,12 +9,7 @@ class Score_Summary
     // the player, team, and timing of scores
     Game* data;
 
-    /*
-     * Displays the scoring summary of a game in the format:
-     *  Period X: Player Y, Team A 1 - Team B 0
-     * for each goal scored in the game provided.
-     */
-    void display(Game);
+    
 
   public:
     /*
@@ -22,6 +17,13 @@ class Score_Summary
      * particular game so it can update whenever a new goal has been scored
      */
     Score_Summary(Game*);
+
+    /*
+     * Displays the scoring summary of a game in the format:
+     *  Period X: Player Y, Team A 1 - Team B 0
+     * for each goal scored in the game provided.
+     */
+    void display();
 };
 
 #endif

@@ -9,13 +9,6 @@ class Scoreboard
     // the player, team, and timing of scores
     Game* data;
 
-    /*
-     * Displays the team scores game in the format:
-     *  Team A: 1
-     *  Team B: 0
-     * for the current total scores in the game provided.
-     */
-    void display(Game);
 
   public:
     /*
@@ -24,6 +17,14 @@ class Scoreboard
      * updated whenever there is a new score
      */
     Scoreboard(Game*);
+
+    /*
+     * Displays the team scores game in the format:
+     *  Team A: 1
+     *  Team B: 0
+     * for the current total scores in the game provided.
+     */
+    void display();
 };
 
 #endif

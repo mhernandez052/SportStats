@@ -6,9 +6,10 @@
 
 //private helper to open a file and load the roster as Name Number format
 std::vector <Player> Game::get_roster_from_file(std::string file){
+  const char * f_cstr = file.c_str();
   std::ifstream read;
   std::vector <Player> list;
-  read.open(file, std::ios::in );
+  read.open(f_cstr, std::ios::in );
   if( read.is_open() ){
     std::string name;
     int number;
